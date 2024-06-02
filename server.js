@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 app.use(auth);
 app.use("/api", router);
 app.use(history());
-app.use("/", express.static("./dist/SportsStore/browser"));
+app.use("/", express.static("./dist/sportsstore/browser"));
 
-app.listen(8080, () => console.log("HTTP Server running on port 8080"));
+app.listen(81, () => console.log("HTTP Server running on port 81"));
 
 if (enableHttps) {
   https.createServer(ssloptions, app).listen(443, () => console.log("HTTPS Server running on port 443"));
