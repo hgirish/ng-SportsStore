@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/sports-store",
+            "outputPath": "dist/SportsStore",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,7 +64,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "900kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -79,7 +79,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true              
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
