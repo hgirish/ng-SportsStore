@@ -21,6 +21,10 @@ export class ProductRepository {
         .filter(p => category == undefined || category == p.category);
     }
 
+    getProduct(id:number):Product | undefined {
+        return this.products.find( p => p.id == id);
+    }
+
     getCategories(): string[] {
         return this.categories;
     }
