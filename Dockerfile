@@ -2,7 +2,7 @@ FROM node:20-alpine
 
 RUN mkdir -p /usr/src/sportsstore
 
-COPY dist/SportsStore /usr/src/sportsstore/dist/sportsstore
+COPY dist/sportsstore /usr/src/sportsstore/dist/sportsstore
 COPY ssl /usr/src/sportsstore/ssl
 
 COPY authMiddleware.js /usr/src/sportsstore
